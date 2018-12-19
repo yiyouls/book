@@ -72,12 +72,7 @@ For example, let’s change *src/main.rs* to the following:
 <span class="filename">Filename: src/main.rs</span>
 
 ```rust
-fn main() {
-    let mut x = 5;
-    println!("The value of x is: {}", x);
-    x = 6;
-    println!("The value of x is: {}", x);
-}
+{{#include ../examples/ch03-01-variables-and-mutability/unnumbered-02/src/main.rs }}
 ```
 
 When we run the program now, we get this:
