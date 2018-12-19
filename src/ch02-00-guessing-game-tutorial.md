@@ -81,20 +81,7 @@ allow the player to input a guess. Enter the code in Listing 2-1 into
 <span class="filename">Filename: src/main.rs</span>
 
 ```rust,ignore
-use std::io;
-
-fn main() {
-    println!("Guess the number!");
-
-    println!("Please input your guess.");
-
-    let mut guess = String::new();
-
-    io::stdin().read_line(&mut guess)
-        .expect("Failed to read line");
-
-    println!("You guessed: {}", guess);
-}
+{{#include ../examples/ch02-00-guessing-game-tutorial/listing-2-1/src/main.rs}}
 ```
 
 <span class="caption">Listing 2-1: Code that gets a guess from the user and
